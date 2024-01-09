@@ -18,6 +18,7 @@ import { useState } from "react";
 import { useTheme } from "next-themes";
 import { FaMoon } from "react-icons/fa";
 import { THEME } from "../types/theme";
+import { signOut } from "next-auth/react";
 
 export const MoreMenu = () => {
   const [isSubMenuOpened, toggleSubMenu] = useState(false);
@@ -34,6 +35,7 @@ export const MoreMenu = () => {
             closeDelay={0}
             radius="sm"
             showArrow={true}
+            shadow="md"
             className="p-2"
           >
             <button className="side-bar__item outline-none">
@@ -102,6 +104,7 @@ export const MoreMenu = () => {
           </DropdownItem>
           <DropdownItem
             key="logout"
+            onClick={() => signOut()}
             aria-label="Log Out"
             className="side-bar__item p-4 m-0 mt-[0.375rem]"
           >

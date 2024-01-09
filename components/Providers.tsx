@@ -7,7 +7,12 @@ import { ThemeProvider } from "next-themes";
 export const Providers: FC<PropsWithChildren> = ({ children }) => {
   return (
     <NextUIProvider className="flex flex-col md:flex-row h-full">
-      <ThemeProvider attribute="class" enableSystem>
+      <ThemeProvider
+        attribute="class"
+        enableSystem
+        defaultTheme="system"
+        disableTransitionOnChange
+      >
         {children}
       </ThemeProvider>
     </NextUIProvider>

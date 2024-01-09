@@ -1,0 +1,1 @@
+export const authPathnameses = ['/login', '/register']

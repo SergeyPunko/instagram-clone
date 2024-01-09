@@ -16,10 +16,12 @@ const config: Config = {
       },
       colors: {
         'primary-text': 'var(--primary-text)',
+        'secondary-text': 'var(--secondary-text)',
         'primary-background': 'var(--primary-background)',
         'hover-overlay': 'var(--hover-overlay)',
         'separator': 'var(--separator)',
-        'tertiary-icon': 'var(--tertiary-icon)'
+        'tertiary-icon': 'var(--tertiary-icon)',
+        'primary-button': 'var(--primary-button)'
       }
     },
   },

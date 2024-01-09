@@ -62,6 +62,7 @@ export const NavMenu = () => {
             delay={500}
             closeDelay={0}
             radius="sm"
+            shadow="md"
             showArrow={true}
             className="p-2"
           >

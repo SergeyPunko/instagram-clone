@@ -2,21 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-  :root {
-    --primary-text: #000;
-    --primary-background: #fff;
-    --separator: #dbdbdb;
-    --hover-overlay: rgba(0,0,0,.05);
-    --tertiary-icon: #c7c7c7;
-  }
+:root {
+  --primary-text: #000;
+  --primary-background: #fff;
+  --separator: #dbdbdb;
+  --hover-overlay: rgba(0, 0, 0, 0.05);
+  --tertiary-icon: #c7c7c7;
+  --secondary-text: #737373;
+  --primary-button: rgb(0, 149, 246);
+}
 
-  .dark {
-    --primary-text: #fff;
-    --primary-background: #000;
-    --separator: #262626;
-    --hover-overlay: rgba(255,255,255,.1);
-    --tertiary-icon: #737373;
-  }
+.dark {
+  --primary-text: #fff;
+  --primary-background: #000;
+  --separator: #262626;
+  --hover-overlay: rgba(255, 255, 255, 0.1);
+  --tertiary-icon: #737373;
+  --secondary-text: #a8a8a8;
+  --primary-button: rgb(0, 149, 246);
+}
 
 @layer components {
   .side-bar__item {
@@ -30,5 +34,5 @@
 }
 
 body {
-  @apply text-primary-text bg-primary-background  
+  @apply !text-primary-text !bg-primary-background;
 }
